@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbería Elegante</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f3f3f3;
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1599351431406-35b47f3de0a5') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+    .hero h2 {
+      font-size: 50px;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    }
+    .services {
+      padding: 60px 40px;
+      background: white;
+    }
+    .services h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin: 10px 0;
+    }
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Barbería Elegante</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2>Tu estilo, nuestra pasión</h2>
+  </section>
+
+  <section class="services" id="servicios">
+    <h2>Servicios</h2>
+    <div class="service-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70" alt="Corte clásico" />
+        <h3>Corte Clásico</h3>
+        <p>Un estilo limpio y profesional para cualquier ocasión.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2" alt="Afeitado" />
+        <h3>Afeitado Premium</h3>
+        <p>Con toallas calientes y productos de alta calidad.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1604072366595-e75dc92a1f86" alt="Barba" />
+        <h3>Perfilado de Barba</h3>
+        <p>La forma perfecta para tu estilo personal.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>© 2025 Barbería Elegante | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
