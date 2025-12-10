@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuario</title>
+</head>
+<body>
+
+<h1>Editar Usuario</h1>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <label>Nombre de usuario:</label><br>
+    <input type="text" name="username" value="{{ usuario.username }}" required><br><br>
+
+    <label>Nueva contraseña:</label><br>
+    <input type="password" name="password" placeholder="Dejar vacío para no cambiar"><br><br>
+
+    <label>URL de imagen:</label><br>
+    <input type="text" name="imagen_url" value="{{ usuario.imagen_url }}"><br><br>
+
+    <button type="submit">Guardar cambios</button>
+</form>
+
+<br>
+<a href="{% url 'lista_usuarios' %}">← Volver a la lista</a>
+
+</body>
+</html>
